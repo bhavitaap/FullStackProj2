@@ -108,7 +108,7 @@ export default function Home() {
         </div>
       </div>
       <div style={{ display: 'flex', alignContent: 'center', flexWrap: 'wrap', gap: '20px', marginTop: '20px' }}>
-        {books.map((book) => {
+        {books.slice(0, 50).map((book) => {
           const coverUrl = book.cover_i
             ? `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
             : 'https://via.placeholder.com/128x192.png?text=No+Cover';
